@@ -1,0 +1,34 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "sample app to practice creating a react app without create-react-app",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
+  },
+  "author": "aquibJaved",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-loadable": "^5.5.0",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  }
+}
