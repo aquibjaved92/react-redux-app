@@ -6,9 +6,12 @@ const Contact = (props) => {
     return(
         <div>
             {
-                userStatus==="okay" ?
+                userStatus==="online" ?
                 <React.Fragment>welcome, Contact page</React.Fragment> :
-                <React.Fragment>You are not logged in</React.Fragment>
+                <div>
+                    <div>you are not logged in</div>
+                    <span onClick={() => props.history.push("/")}>go to login</span>
+                </div>
             }
             <p>{props.change}</p>
         </div>
